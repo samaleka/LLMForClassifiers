@@ -1,4 +1,4 @@
-Following is the code repository structure:
+### Following is the code repository structure:
 
 1. Dataset/ -> Dir which hosts datasets for different tasks
 2. Prompts/ -> Dir which hosts prompt templates for different dataset tasks
