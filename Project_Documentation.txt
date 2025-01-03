@@ -1,0 +1,20 @@
+The project aims to provide a framework to create classifiers for different tasks using the same underlying LLM model. 
+"google/flan-t5-large" LLM is used as the classifier base model for it's lower inference time in non GPU environments. This allows the classifiers to classify tasks in reasonable amount of time in CPU envionments.
+
+Datasets in different formats can be stored offline in the Dataset dir for later use in evaluation stage. Also, task specific prompt templates are stored in Prompts dir which are used by corresponding classifier objects to build prompts to be fed to LLM for inference.
+
+Further, Object Oriented concepts are used to create parent and child classes for maintainability, scalability and readability of the code. 
+For example, base Classifier class is inherited by derived binary/multi-class classifier classes which can then leverage the common helper functions from base class. Hence, different base classes are created like Classifier (from LLM_init.py) for classification model and BaseEvaluator (from LLM_eval.py) for evaluating a model against a dataset. 
+Common metrics like Precision, Recall, F1 scores are calculated for model evaluation.
+
+For adding a classifier for a new task, Authors just need to:
+1. Fetch the dataset for new task.
+2. Create relevant prompt template.
+3. Derive a new classifier class and corresponding evaluator class and run it end-end.
+
+So far, 3 classifiers are created for following tasks & datasets:
+1. Binary classifier for classifying positive/negative sentiment from IMDB reviews dataset.
+2. Multi-class classifier for classifying news category from 20 News Group dataset.
+3. Multi-class classifier for classifying 6 emotions from emotions dataset.
+
+For further enhancements, larger LLMs can be used as the inference engine but that might require expensive GPU environments. So far only few shot prompting technique is used but advanced techniques like Chain of Thought can be leveraged to improve classifier performance.

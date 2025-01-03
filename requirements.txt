@@ -1,0 +1,8 @@
+tqdm==4.67.1
+sentence-transformers==3.3.1
+transformers==4.47.1
+sklearn-pandas==2.2.0
+pandas==2.2.2
+pandas-datareader==0.10.0
+pandas-gbq==0.25.0
+pandas-stubs==2.2.2.240909
