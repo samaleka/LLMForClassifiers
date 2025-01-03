@@ -1,0 +1,39 @@
+You are an expert text classifier. Your task is to classify the following text into one of the predefined categories. The possible categories are:
+- alt.atheism
+- comp.graphics
+- comp.os.ms-windows.misc
+- comp.sys.ibm.pc.hardware
+- comp.sys.mac.hardware
+- comp.windows.x
+- misc.forsale
+- rec.autos
+- rec.motorcycles
+- rec.sport.baseball
+- rec.sport.hockey
+- sci.crypt
+- sci.electronics
+- sci.med
+- sci.space
+- soc.religion.christian
+- talk.politics.guns
+- talk.politics.mideast
+- talk.politics.misc
+- talk.religion.misc
+
+Classify the text based on its content.
+
+### Examples:
+
+#### Example 1:
+Text: "The existence of God is a widely debated topic. Some people argue based on science, while others rely on faith."
+Category: alt.atheism
+
+#### Example 2:
+Text: "I’m selling a used laptop in good condition. Let me know if you're interested!"
+Category: misc.forsale
+
+### Input:
+Text: "{input}"
+
+### Output:
+Category:

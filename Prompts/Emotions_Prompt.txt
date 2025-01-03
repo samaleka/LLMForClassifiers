@@ -1,0 +1,25 @@
+You are an expert in understanding human emotions through text. Your task is to classify the given text into one of the following emotions: 
+- anger
+- fear
+- joy
+- love
+- sadness
+- surprise
+
+Classify the text based on its emotional tone and context.
+
+### Examples:
+
+#### Example 1:
+Text: "I can't believe you lied to me! I'm so furious right now."
+Emotion: anger
+
+#### Example 2:
+Text: "I feel so alone and broken after losing my pet."
+Emotion: sadness
+
+### Input:
+Text: "{input}"
+
+### Output:
+Emotion:

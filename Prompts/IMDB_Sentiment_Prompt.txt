@@ -1,0 +1,15 @@
+Classify the sentiment of the following IMDb movie review as either 0 (negative) or 1 (positive).
+
+Examples:
+
+Review: 'The movie was boring and poorly directed. I wouldn't recommend it to anyone.'
+Sentiment: 0
+
+Review: 'Absolutely loved it! The acting was phenomenal and the story was deeply engaging.'
+Sentiment: 1
+
+Now classify the sentiment of the following review:
+
+Review: '{input}'
+
+Sentiment:"
